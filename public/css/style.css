@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;400;600;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arimo:wght@400;600;700&display=swap');
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+.fs-consolas {
+    font-family: Consolas, monaco, monospace;
+}
+
+.fs-montserrat {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.fs-source-code {
+    font-family: 'Source Code Pro', monospace;
+}
+
+.fs-arimo {
+    font-family: 'Arimo', sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    overflow: hidden;
+}
+
+#page {
+    width: 100%;
+    max-width: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0px 15px;
+}
+
+#page h1 {
+    text-align: center !important;
+}
+
+#request-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+#request-form label {
+    width: 100%;
+    text-align: center;
+}
+
+#request-form button,
+#request-form input {
+    width: 100%;
+    margin-top: 1rem;
+}
+
+#url::selection {
+    background: #2abbac;
+    color: white;
+}
+
+.output {
+    width: 98%;
+    height: 100%;
+    max-height: 900px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.flex-row {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 3px;
+    margin: 10px;
+    overflow: hidden;
+}
+
+.flex-row div {
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    margin: 5px 10px;
+    padding: 10px;
+    border: 1px solid rgba(0, 0, 0, .2);
+    box-shadow: 0px 0px 3px 2px rgba(0, 0, 0, .1);
+    text-align: left;
+}
+
+.form-btn {
+    padding: 8px 40px;
+    background: #569993;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    box-shadow: 0px 2px 2px 1px rgba(0, 0, 0, 0.15);
+    transition: all .1s linear;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-btn:hover {
+    background: #2abbac;
+    box-shadow: 0px 2px 3px 2px rgba(0, 0, 0, 0.08);
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f2f2f2;
+    border-radius: 1px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #569993;
+    border-radius: 1px;
+}
+
+::-webkit-scrollbar-thumb:active {
+    background: #2abbac;
+    border-radius: 1px;
+}
